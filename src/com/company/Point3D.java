@@ -58,17 +58,10 @@ public class Point3D {
     }
 
     public static double computeArea(Point3D p1, Point3D p2, Point3D p3) {
-<<<<<<< HEAD
 
         double p1p2 = p1.distanceTo(p2);
         double p1p3 = p1.distanceTo(p3);
         double p2p3 = p2.distanceTo(p3);
-=======
-        double p1p2 = Double.parseDouble(p1.distanceTo(p2));
-        double p1p3 = Double.parseDouble(p1.distanceTo(p3));
-        double p2p3 = Double.parseDouble(p2.distanceTo(p3));
-        
->>>>>>> 9efb3a33c6fdcf00dcaa358baa562f89f7927caf
 
         double per = ((p1p2 + p1p3 + p2p3))/2.0; // формула полупериметра для формулы герона
         return sqrt(per*(per - p1p2)*(per - p1p3)*(per - p2p3)); //  sqrt{p(p-a)(p-b)(p-c)} - та самая формула герона
